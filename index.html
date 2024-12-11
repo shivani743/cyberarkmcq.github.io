@@ -522,66 +522,71 @@
                 },
                 {
                     "id": 21,
-                    "question": "You want to add an additional maintenance user on the PSM for SSH. How can you accomplish this if Install Cyberark SSHD is set to Yes or No?",
+                    "question": "Which statements are correct about the PSM HTML5 gateway? (Choose two.)",
                     "options": [
                         {
-                            "a": "Create a local user and add it to the PSMMaintenance Group.",
-                            "b": "Create a local user called proxymng &lt;number&gt;.",
-                            "c": "Create a local user, called psmpmng &lt;number&gt;.",
-                            "d": "Create a local user and add it to group configured for the parameter AllowGroups in the /etc/sshd_config file.",
+                            "a": "It does not support connections to target system where NLA is enabled on the PSM server",
+                            "b": "It does not support session recording capabilities for applications that run outside a web browser",
+                            "c": "Smart card redirection is supported",
+                            "d": "Printer redirection cannot be enabled",
+                            "e": "bc",
+                            "f": "ad",
+                            "g": "bd"
 
                         }
                     ],
-                    "answer": "Create a local user and add it to group configured for the parameter AllowGroups in the /etc/sshd_config file.",
+                    "answer": "ad",
                     "score": 0,
                     "status": ""
                 },
                 {
                     "id": 22,
-                    "question": "Which SMTP address can be set on the Notification Settings page to re-invoke the ENE setup wizard after the initial Vault installation?",
+                    "question": "In order to avoid conflicts with the hardening process, third party applications like Antivirus and Backup Agents should be installed on the Vault server before installing the Vault.",
                     "options": [
                         {
-                            "a": "192.168.1.1",
-                            "b": "255.255.255.255",
-                            "c": "1.1.1.1",
-                            "d": "8.8.8.8",
+                            "a": "TRUE",
+                            "b": "FALSE",
 
                         }
                     ],
-                    "answer": "1.1.1.1",
+                    "answer": "FALSE",
                     "score": 0,
                     "status": ""
                 },
                 {
                     "id": 23,
-                    "question": "In addition to bit rate and estimated total duration of recordings per day, what is needed to determine the amount of storage required for PSM recordings?",
+                    "question": "Which of the following protocols need to be installed on a standalone vault server? Check all that apply",
 
                     "options": [
                         {
-                            "a": "number of targets",
-                            "b": "number of PSMs",
-                            "c": "retention period",
-                            "d": "number of users",
+                            "a": "NIC Teaming Driver, if applicable",
+                            "b": "File and Printer Sharing for Microsoft Networks",
+                            "c": "Internet Protocol version 4 (TCP/IPv4)",
+                            "d": "Client for Microsoft Networks",
+                            "e": "QoS Packet Scheduler",
+                            "f": "abde",
+                            "g": "bcde",
+                            "h": "acde",
 
                         }
                     ],
-                    "answer": "retention period",
+                    "answer": "bcde",
                     "score": 0,
                     "status": ""
                 },
                 {
                     "id": 24,
-                    "question": "Which components can connect to a satellite Vault in a distributed Vault architecture?",
+                    "question": "A new domain controller has been added to your domain. You need to ensure the CyberArk infrastructure can use the new domain controller for authentication. Which locations must you update?",
                     "options": [
                         {
-                            "a": "CPM, EPM, PTA",
-                            "b": "CPM, PVWA, PSM",
-                            "c": "CPM, PSM",
-                            "d": "PVWA, PSM",
+                            "a": "on both the Vault and the PVWA servers in C:\Windows\System32\drivers\etc\hosts",
+                            "b": "on the Vault server in C:\Windows\System32\drivers\etc\hosts and in the PVWAApplication under Administration &gt; LDAP Integration  &gt; Directories  &gt; Hosts",
+                            "c": "on the Vault server in the certificate store and on the PVWA server in the certificate store",
+                            "d": "in the Private Ark client under Tools > Administrative Tools > Directory Mapping",
 
                         }
                     ],
-                    "answer": "CPM, PVWA, PSM",
+                    "answer": "on the Vault server in C:\Windows\System32\drivers\etc\hosts and in the PVWAApplication under Administration &gt; LDAP Integration  &gt; Directories  &gt; Hosts",
                     "score": 0,
                     "status": ""
                 },
