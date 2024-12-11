@@ -1,0 +1,1830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentry Cyberark Mock Interview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    body {
+        font-family: 'Space Grotesk', sans-serif !important;
+    }
+
+    .bg-primary {
+        background-color: #002e6e !important;
+    }
+
+    .dropbtn2 {
+        background: none;
+    }
+
+    .navbar-brand {
+
+        font-size: 17px;
+
+        font-weight: 100;
+        white-space: normal;
+    }
+
+    .content {
+        margin-top: 14px;
+    }
+
+    .left-title {
+        width: 100px;
+        color: #FFF;
+        font-size: 18px;
+        float: left;
+    }
+
+    .right-title {
+        width: 151px;
+        text-align: right;
+        float: right;
+        color: #FFF;
+    }
+
+    .quiz-body {
+        margin-top: 15px;
+        padding-bottom: 50px;
+    }
+
+    @media (max-width: 768px) {
+        .quiz-body {
+            height: 501px;
+            overflow-x: scroll;
+
+        }
+    }
+
+    .option-block-container {
+        margin-top: 19px;
+    }
+
+    .option-block {
+        padding: 8px 0px;
+        background: rgb(255, 255, 255);
+        border-bottom: 1px solid #eeeeee;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .result-question {
+        font-weight: bold;
+    }
+
+    .c-wrong {
+        margin-left: 18px;
+        color: #930000;
+    }
+
+    .c-correct {
+        margin-left: 20px;
+        color: rgb(1, 125, 1);
+    }
+
+    .last-row {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
+
+    .res-header {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+
+    .form-check .form-check-input {
+        float: left;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+    #countdown {
+        font-size: 18px;
+    }
+</style>
+
+<body>
+
+    <section>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1"
+                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-left">
+                        <path d="M6 8L2 12L6 16" />
+                        <path d="M2 12H22" />
+                    </svg> &nbsp;Mock Interview Question <span class="text-white"> | </span> <span><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-help-circle">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                            <path d="M12 17h.01" />
+                        </svg>&nbsp; Total Question: 75</span> <span class="text-white"> | </span><span
+                        class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                            viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-timer-reset">
+                            <path d="M10 2h4" />
+                            <path d="M12 14v-4" />
+                            <path d="M4 13a8 8 0 0 1 8-7 8 8 0 1 1-5.3 14L4 17.6" />
+                            <path d="M9 17H4v5" />
+                        </svg> Total Time: <span id="countdown" style="font-weight: bold;"></span> </span>
+
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <span class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-user-round-check">
+                                <path d="M2 21a8 8 0 0 1 13.292-6" />
+                                <circle cx="10" cy="8" r="5" />
+                                <path d="m16 19 2 2 4-4" />
+                            </svg> &nbsp;Candidate </span>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <div class="content">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="result" class="quiz-body">
+                        <form name="quizForm" onSubmit="">
+                            <fieldset class="form-group">
+                                <h5><span id="qid">1.</span> <span id="question"></span></h5>
+
+                                <div class="option-block-container" id="question-options">
+
+                                </div> <!-- End of option block -->
+                            </fieldset>
+                            <div style="    position: absolute;
+                            bottom: 0;
+                            margin-bottom: 14px;">
+                                <button name="previous" id="previous"
+                                    class="btn btn-primary pull-left">Previous</button>
+                                &nbsp;
+                                <button name="next" id="next" class="btn btn-dark pull-right">Next</button>
+                            </div>
+                        </form>
+                    </div>
+                </div> <!-- End of col-sm-12 -->
+
+            </div> <!-- End of row -->
+        </div> <!-- ENd of container fluid -->
+    </div> <!-- End of content -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script>
+        /* Created and coded by Abhilash Narayan */
+        /* Quiz source: w3schools.com */
+
+        var quiz = {
+            "JS": [
+                {
+                    "id": 1,
+                    "question": "Which component must be installed before the first CPM installation?",
+                    "options": [
+                        {
+                            "a": "PTA",
+                            "b": "EPM",
+                            "c": "PSM",
+                            "d": "PVWA"
+                        }
+                    ],
+                    "answer": "PTA",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 2,
+                    "question": "Which SMTP address can be set on the Notification Settings page to re-invoke the ENE setup wizard after the initial Vault installation?",
+                    "options": [
+                        {
+                            "a": "8.8.8.8",
+                            "b": "192.168.1.1 ",
+                            "c": "255.255.255.255",
+                            "d": "1.1.1.1"
+                        }
+                    ],
+                    "answer": "1.1.1.1",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 3,
+                    "question": "Which statement about REST API is correct? (Choose two.) ",
+                    "options": [
+                        {
+                            "a": "To allow High Availability, REST API can be configured to support Session Load Balancing by editing the PVConfiguration.xml and setting the AllowPVWASessionRedandancy=Yes. ",
+                            "b": "REST API Windows authentication method allows skipping the logon API by using the Windows default credentials with a Kerberos ticket. ",
+                            "c": "When a user successfully authenticates to the Vault, an authentication token is returned. Most Voted",
+                            "d": "REST calls are directly sent to the currently active Vault using Port 1858",
+                            "e": "Each REST API call requires that a valid authentication token be provided. Most Voted",
+                            "f": "ab",
+                            "g": "cd",
+                            "h": "ce",
+                            "i": "be"
+                        }
+                    ],
+                    "answer": "ce",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 4,
+                    "question": "The account used to install a PVWA must have ownership of which safes? (Choose two.)",
+                    "options": [
+                        {
+                            "a": "PVWAReports",
+                            "b": "System",
+                            "c": "PVWAConfig",
+                            "d": "Notification Engine",
+                            "e": "VaultInternal",
+                            "f": "ae",
+                            "g": "de",
+                            "h": "bd"
+                        }
+                    ],
+                    "answer": "de",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 5,
+                    "question": "What is a valid combination of primary and secondary layers of authentication to a company's two-factor authentication policy?",
+                    "options": [
+                        {
+                            "a": "RSA SecurID Authentication (in PVWA) and LDAP Authentication",
+                            "b": "Oracle SSO (in PVWA) and SAML Authentication",
+                            "c": "LDAP Authentication and RADIUS Authentication",
+                            "d": "CyberArk Authentication and RADIUS Authentication"
+                        }
+                    ],
+                    "answer": "RSA SecurID Authentication (in PVWA) and LDAP Authentication",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 6,
+                    "question": "You need to add a new PSM server to an existing CyberArk environment. What is the best way to determine the sizing of this server?",
+                    "options": [
+                        {
+                            "a": "Refer to the Microsoft Windows website, determine the minimum specifications required for the Operating System you are installing, and then add 4 Gb of RAM and 20 GB of disk.",
+                            "b": "Use the specifications of any existing PSM and request a server of the same size.",
+                            "c": "Use the CyberArk Support Knowledgebase, search for PSM Sizing and locate the Knowledgebase article related to sizing.",
+                            "d": "Review the Recommended Server Specifications for PSMs in the CyberArk Documents website. Most Voted"
+                        }
+                    ],
+                    "answer": "Review the Recommended Server Specifications for PSMs in the CyberArk Documents website. Most Voted",
+                    "score": 0,
+                    "status": ""
+                },
+
+                {
+                    "id": 7,
+                    "question": "In which configuration file do you add LoadBalancerClientAddressHeader when you enable xforwarding on the PVWA loadbalancer?",
+                    "options": [
+                        {
+                            "a": "web.config",
+                            "b": "PVconfiguration.xml",
+                            "c": "CyberArkScheduledTasks.exe.config",
+                            "d": "apigw.ini"
+                        }
+                    ],
+                    "answer": "web.config",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 8,
+                    "question": "You are beginning the post-install process after a manual PSM installation is completed. What must you do?",
+                    "options": [
+                        {
+                            "a": "Disable screen saver for the PSM local users.",
+                            "b": "Reset the PSMAdminConnect user password",
+                            "c": "Enable load balancing on the PSM server",
+                            "d": "Create a new group called PSMShadowUsers"
+                        }
+                    ],
+                    "answer": "Disable screen saver for the PSM local users.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 9,
+                    "question": "Which file must you edit to ensure the PSM for SSH server is not hardened automatically after installation?",
+                    "options": [
+                        {
+                            "a": "vault.ini",
+                            "b": "psmpparms",
+                            "c": "user.cred",
+                            "d": "psmgw.config"
+                        }
+                    ],
+                    "answer": "psmpparms",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 10,
+                    "question": "Which parameter must be provided when registering a primary Vault in Azure, but not in Amazon Web Services?",
+                    "options": [
+                        {
+                            "a": "/RDPGateway",
+                            "b": "/RecPub",
+                            "c": "/MasterPass",
+                            "d": "/AdminPass"
+                        }
+                    ],
+                    "answer": "/RDPGateway",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 11,
+                    "question": "Which files does the Vault Installation Wizard prompt you for during the Vault install?",
+                    "options": [
+                        {
+                            "a": "Operator CD and License Most Voted",
+                            "b": "Operator CD and Vault Certificate",
+                            "c": "Master CD and DBparm.ini",
+                            "d": "Master CD and License"
+                        }
+                    ],
+                    "answer": "Operator CD and License Most Voted",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 12,
+                    "question": "What must you do to prepare a Windows server for PVWA installation?",
+                    "options": [
+                        {
+                            "a": "In the InstallationAutomation folder, run the PVWA_Prerequisites.ps1 file as an administrator in Powershell. Most Voted",
+                            "b": "Verify the user performing the installation is Domain Administrator and has logon access to the Vault server.",
+                            "c": "Enable IPv6.",
+                            "d": "Install the PrivateArk client."
+                        }
+                    ],
+                    "answer": "In the InstallationAutomation folder, run the PVWA_Prerequisites.ps1 file as an administrator in Powershell. Most Voted",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 13,
+                    "question": "A customer's environment has three data centers consisting of 5,000 servers in Germany, 10,000 servers in Canada, and 1,500 servers in Singapore. You want to manage target servers and avoid complex firewall rules. How many CPMs should you deploy?",
+                    "options": [
+                        {
+                            "a": "6 total, 2 per data center",
+                            "b": "3 total, 1 per data center",
+                            "c": "1",
+                            "d": "15"
+
+                        }
+                    ],
+                    "answer": "3 total, 1 per data center",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 14,
+                    "question": "Which pre-requisite step must be completed before installing a Vault?",
+                    "options": [
+                        {
+                            "a": "Install a clean operating system.",
+                            "b": "Copy the master CD to a folder on the Vault server",
+                            "c": "Join the server to a domain.",
+                            "d": "Install antivirus software"
+
+
+                        }
+                    ],
+                    "answer": "Install a clean operating system.",
+                    "score": 0,
+                    "status": ""
+                },
+
+                {
+                    "id": 15,
+                    "question": "What must you do to synchronize a new Vault server with an organization's NTP server?",
+                    "options": [
+                        {
+                            "a": "Use the Windows Firewall console to configure a rule on the Vault server which allows communication with the organization's NTP server.",
+                            "b": "Update the AutoSyncExternalObjects configuration in DBParm.ini on the Vault server to schedule regular synchronization.",
+                            "c": "Use the Windows Firewall console to configure a rule on the Vault server which allows communication with the organization's NTP server.",
+                            "d": "Configure an AllowNonStandardFWAddresses rule for the organization's NTP server in DBParm.ini on the Vault server.",
+
+                        }
+                    ],
+                    "answer": "Configure an AllowNonStandardFWAddresses rule for the organization's NTP server in DBParm.ini on the Vault server.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 16,
+                    "question": "Which user is enabled when replicating data between active and stand-by Vaults?",
+                    "options": [
+                        {
+                            "a": "Operator",
+                            "b": "DR",
+                            "c": "Auditor",
+                            "d": "Backup",
+
+                        }
+                    ],
+                    "answer": "DR",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 17,
+                    "question": "What is the recommended method to determine if a PVWA is unavailable and should be disabled in a load balancing pool?",
+                    "options": [
+                        {
+                            "a": "Ping the PVWA server",
+                            "b": "Monitor Port 1858 on the PVWA server",
+                            "c": "Monitor Port 443 on the PVWA server",
+                            "d": "Monitor Port 3389 on the PVWA server",
+
+                        }
+                    ],
+                    "answer": "Monitor Port 443 on the PVWA server",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 18,
+                    "question": "When creating a distributed Vault environment archr installing PVWA Check all that Apply.",
+                    "options": [
+                        {
+                            "a": "Remote Desktop Services Role",
+                            "b": "Web Services Role",
+                            "c": "Windows BitLocker",
+                            "d": "NET 4.5.1 Framework Feature",
+
+                        }
+                    ],
+                    "answer": "Web Services Role",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 19,
+                    "question": "To apply a new license file you must:",
+                    "options": [
+                        {
+                            "a": "Upload the license.xml file to the System Safe and restart the PrivateArk Server service",
+                            "b": "Upload the license.xml file to the Vaultlnternal Safe and restart the PrivateArk Server service.",
+                            "c": "Upload the license.xml file to the Vaultlnternal Safe.",
+                            "d": "Upload the license.xml file to the System Safe",
+
+                        }
+                    ],
+                    "answer": "Upload the license.xml file to the System Safe",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 20,
+                    "question": "You are configuring SNMP remote monitoring for your organization's Vault servers. In the PARAgent.ini, which parameter specifies the destination of the Vault SNMP traps?",
+                    "options": [
+                        {
+                            "a": "SNMPVersion",
+                            "b": "SNMPCommunity",
+                            "c": "SNMPVersion",
+                            "d": "SNMPHostIP Most Voted",
+
+                        }
+                    ],
+                    "answer": "SNMPHostIP Most Voted",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 21,
+                    "question": "You want to add an additional maintenance user on the PSM for SSH. How can you accomplish this if Install Cyberark SSHD is set to Yes or No?",
+                    "options": [
+                        {
+                            "a": "Create a local user and add it to the PSMMaintenance Group.",
+                            "b": "Create a local user called proxymng &lt;number&gt;.",
+                            "c": "Create a local user, called psmpmng &lt;number&gt;.",
+                            "d": "Create a local user and add it to group configured for the parameter AllowGroups in the /etc/sshd_config file.",
+
+                        }
+                    ],
+                    "answer": "Create a local user and add it to group configured for the parameter AllowGroups in the /etc/sshd_config file.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 22,
+                    "question": "Which SMTP address can be set on the Notification Settings page to re-invoke the ENE setup wizard after the initial Vault installation?",
+                    "options": [
+                        {
+                            "a": "192.168.1.1",
+                            "b": "255.255.255.255",
+                            "c": "1.1.1.1",
+                            "d": "8.8.8.8",
+
+                        }
+                    ],
+                    "answer": "1.1.1.1",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 23,
+                    "question": "In addition to bit rate and estimated total duration of recordings per day, what is needed to determine the amount of storage required for PSM recordings?",
+
+                    "options": [
+                        {
+                            "a": "number of targets",
+                            "b": "number of PSMs",
+                            "c": "retention period",
+                            "d": "number of users",
+
+                        }
+                    ],
+                    "answer": "retention period",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 24,
+                    "question": "Which components can connect to a satellite Vault in a distributed Vault architecture?",
+                    "options": [
+                        {
+                            "a": "CPM, EPM, PTA",
+                            "b": "CPM, PVWA, PSM",
+                            "c": "CPM, PSM",
+                            "d": "PVWA, PSM",
+
+                        }
+                    ],
+                    "answer": "CPM, PVWA, PSM",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 25,
+                    "question": "You are installing PSM for SSH with AD-Bridge and CyberArkSSHD mode set to integrated for your customer.Which additional packages do you need to install to meet the customer’s needs? (Choose two.)",
+                    "options": [
+                        {
+                            "a": "a.CARKpsmp-infra",
+                            "b": "b.OpenSSH 7.8 or higher",
+                            "c": "c.libssh",
+                            "d": "d.CARKpsmp-ADBridge",
+                            "e": "e.CARKpsmp-SSHD",
+                            "f": "ad",
+                            "g": "cd",
+                            "g": "de",
+
+                        }
+                    ],
+                    "answer": "cd",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 26,
+                    "question": "Which component should be installed on the Vault if Distributed Vaults are used with PSM?",
+                    "options": [
+                        {
+                            "a": "Distributed Vault Server",
+                            "b": "RabbitMQ",
+                            "c": "Disaster Recovery",
+                            "d": "Remote Control Client",
+
+                        }
+                    ],
+                    "answer": "Distributed Vault Server",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 27,
+                    "question": "What is the default username for the PSM for SSH maintenance user when InstallCyberarkSSHD is set to yes?",
+                    "options": [
+                        {
+                            "a": "proxymng",
+                            "b": "psmpmnguser",
+                            "c": "psmp_maintenance",
+                            "d": "psmpmnguser",
+
+                        }
+                    ],
+                    "answer": "psmp_maintenance",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 28,
+                    "question": "Which parameter must be identical for both the Identity Provider (IdP) and the PVWA?",
+                    "options": [
+                        {
+                            "a": "IdP &quot; Secure hash algorithm &quot; and &quot; Certificate &quot; in the PVWA saml.config file",
+                            "b": "IdP &quot; Audience &quot; and &quot; ServiceProviderName &quot; in the PVWA saml.config file",
+                            "c": "IdP &quot; User name &quot; and &quot; SingleSignOnServiceUrl &quot; in PVWA saml.config file",
+                            "d": "IdP &quot; EntityID &quot; and &quot; PartnerIdentityProvider Name &quot; in PVWA saml.config file",
+
+                        }
+                    ],
+                    "answer": "IdP &quot; Secure hash algorithm &quot; and &quot; Certificate &quot; in the PVWA saml.config file",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 29,
+                    "question": "All 80 employees from your satellite Tokyo office are complaining that browsing the PVWA site is very slow; however, your New York headquarters users are not experiencing this. The current PAM solution is:2 distributed Vaults, the primary one in New York and a satellite in Tokyo 2 PVWA servers, both in New York with load balancing configured 2 PSM servers, both in New York without load balancing configured 1 CPM server in New York All PVWA, PSM, and CPM servers are connected to the primary Vault Which proposal optimally resolves the performance issue while minimizing the impact to production? ",
+                    "options": [
+                        {
+                            "a": "Install two new PVWA servers in Tokyo data center, configure load balancing, connect to the local satellite Vault and provide the URL of new PVWA servers to the local employees.",
+                            "b": "Install two new PSM servers in the Tokyo data center, configure load balancing, connect to the local satellite vault, and inform the local employees to browse using the same PVWA URL.",
+                            "c": "Change the current distributed Vaults architecture, migrate back to a Primary-DR architecture, install two new PVWA servers in the Tokyo data center and configure load balancing. Connect to the local DR Vault and provide the URL of new PVWA servers to the local employees.",
+                            "d": "Install two new PVWA servers in New York data center, configure load balancing and have them connect to the satellite Vault in Tokyo.",
+
+                        }
+                    ],
+                    "answer": "Install two new PVWA servers in Tokyo data center, configure load balancing, connect to the local satellite Vault and provide the URL of new PVWA servers to the local employees.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 30,
+                    "question": "You have been asked to limit a platform called &quot; Windows_Servers &quot; to safes called &quot; WindowsDC1 &quot; and &quot; WindowsDC2 &quot;. The platform must not be assigned to any other safe. What is the correct way to accomplish this?",
+                    "options": [
+                        {
+                            "a": "Edit the &quot; Windows_Servers &quot; platform, expand &quot; Automatic Password Management &quot;, then select Options and modify &quot; AllowedSafes &quot; to be (Win*).",
+                            "b": "Edit the &quot; Windows_Servers &quot; platform, expand &quot; Automatic Password Management &quot;, then select General and modify &quot; AllowedSafes &quot; to be (WindowsDC1)|(WindowsDC2).",
+                            "c": "Edit the &quot; WindowsDC1 &quot; and &quot; WindowsDC2 &quot; safes through Safe Management, Add &quot; Windows_Servers &quot; to the &quot; AllowedPlatforms &quot;.",
+                            "d": "Log in to PrivateArk using an Administrative user, Select File, Server File Categories, Locate the category &quot; WindowsServersAllowedSafes &quot; and specify &quot; WindowsDC1,WindowsDC2 &quot;.",
+
+                        }
+                    ],
+                    "answer": "Edit the &quot; Windows_Servers &quot; platform, expand &quot; Automatic Password Management &quot;, then select General and modify &quot; AllowedSafes &quot; to be (WindowsDC1)|(WindowsDC2).",
+                    "score": 0,
+                    "status": ""
+                },
+
+                {
+                    "id": 31,
+                    "question": "The account used to install a PVWA must have ownership of which safes? (Choose two.)",
+                    "options": [
+                        {
+                            "a": "A.VaultInternal",
+                            "b": "B.PVWAConfig",
+                            "c": "C.System",
+                            "d": "D.Notification Engine",
+                            "e": "E.PVWAReports",
+                            "f": "DE",
+                            "g": "AC",
+                            "h": "BD",
+                            "i": "CE",
+
+                        }
+                    ],
+                    "answer": "AC",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 32,
+                    "question": "Which configuration file and Vault utility are used to migrate the server key to an HSM?",
+                    "options": [
+                        {
+                            "a": "VaultKeys.ini and ChangeServerKeys.exe",
+                            "b": "DBparm.ini and CAVaultManager.exe",
+                            "c": "VaultKeys.ini and CAVaultManager.exe",
+                            "d": "DBparm.ini and ChangeServerKeys.exe",
+
+                        }
+                    ],
+                    "answer": "VaultKeys.ini and ChangeServerKeys.exe",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 33,
+                    "question": "There is a requirement for a password to change between 01:00 and 03:00 on Saturdays and Sundays; however, this does not work consistently. Which platform setting may be the cause?",
+                    "options": [
+                        {
+                            "a": "The DaysToRun setting for the platform is incorrect and must be set to Sat,Sun.",
+                            "b": "The HeadStartInterval setting for the platform is incorrect and must be set to 0.",
+                            "c": "The Interval setting for the platform is incorrect and must be less than 120.",
+                            "d": "The ImmediateInterval setting for the platform is incorrect and must be greater than or equal to 1.",
+
+                        }
+                    ],
+                    "answer": "The DaysToRun setting for the platform is incorrect and must be set to Sat,Sun.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 34,
+                    "question": "What must you do to synchronize a new Vault server with an organization’s NTP server?",
+                    "options": [
+                        {
+                            "a": "Use the Windows Firewall console to configure a rule on the Vault server which allows communication with the organization’s NTP server.",
+                            "b": "Ensure the organization’s NTP server is installed in the same location as the Vault server requiring synchronization.",
+                            "c": "Update the AutoSyncExternalObjects configuration in DBParm.ini on the Vault server to schedule regular synchronization.",
+                            "d": "Configure an AllowNonStandardFWAddresses rule for the organization’s NTP server in DBParm.ini on the Vault server.",
+
+                        }
+                    ],
+                    "answer": "Update the AutoSyncExternalObjects configuration in DBParm.ini on the Vault server to schedule regular synchronization.",
+                    "score": 0,
+                    "status": ""
+                },
+
+                {
+                    "id": 35,
+                    "question": "Which file must you edit to ensure the PSM for SSH server is not hardened automatically after installation?",
+                    "options": [
+                        {
+                            "a": "user.cred",
+                            "b": "psmpparms",
+                            "c": "vault.ini",
+                            "d": "psmgw.config",
+
+                        }
+                    ],
+                    "answer": "psmgw.config",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 36,
+                    "question": "When integrating a Vault with HSM, which file is uploaded to the HSM device?",
+                    "options": [
+                        {
+                            "a": "mdbase.dat",
+                            "b": "recprv.key",
+                            "c": "recpub.key",
+                            "d": "server.key",
+
+                        }
+                    ],
+                    "answer": "recprv.key",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 37,
+                    "question": "What is a prerequisite step before CyberArk can be configured to support RADIUS authentication?",
+                    "options": [
+                        {
+                            "a": "Navigate to /Server/Conf and open DBParm.ini and set the RadiusServersInfo parameter.",
+                            "b": "Log on to the PrivateArk Client, display the User properties of the user to configure, run the Authentication method drop-down list, and select RADIUS authentication.",
+                            "c": "In the RADIUS server, define the CyberArk Vault as a RADIUS client/agent.",
+                            "d": "In the Vault installation folder, run CAVaultManager as administrator with the SecureSecretFiles command.",
+
+                        }
+                    ],
+                    "answer": "In the RADIUS server, define the CyberArk Vault as a RADIUS client/agent.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 38,
+                    "question": "A customer wants to store PSM recordings for 100 days and estimates they will have 10 Windows sessions per day for 100 minutes each.What is the minimum storage required for the Vault and PAReplicate for the PSM recordings?",
+                    "options": [
+                        {
+                            "a": "250 GB",
+                            "b": "500 GB",
+                            "c": "25 GB",
+                            "d": "5 GB",
+
+                        }
+                    ],
+                    "answer": "250 GB",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 39,
+                    "question": "In large-scale environments, it is important to enable the CPM to focus its search operations on specific Safes instead of scanning all Safes it sees in the Vault. How is this accomplished?",
+                    "options": [
+                        {
+                            "a": "Administration > Options > CPM Scanner",
+                            "b": "MaxConcurrentConnection parameter on each platform policy",
+                            "c": "Administration Options > CPM Settings",
+                            "d": "AllowedSafe Parameter on each platform policy",
+
+                        }
+                    ],
+                    "answer": "AllowedSafe Parameter on each platform policy",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 40,
+                    "question": "When SAML authentication is used to sign in to the PVWA, which service performs the actual authentication?",
+                    "options": [
+                        {
+                            "a": "CyberArk Password Vault Web Access (PVWA)",
+                            "b": "Identity Provider (IdP)",
+                            "c": "Service Provider (SP)",
+                            "d": "Active Directory (AD)",
+
+                        }
+                    ],
+                    "answer": "Identity Provider (IdP)",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 41,
+                    "question": "Which components support load balancing? (Choose two.)",
+                    "options": [
+                        {
+                            "a": "A.CPM",
+                            "b": "B.PVWA",
+                            "c": "C.PSM",
+                            "d": "D.PTA",
+                            "e": "E.EPV",
+                            "f": "AC",
+                            "g": "CD",
+                            "H": "CE",
+
+                        }
+                    ],
+                    "answer": "CD",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 42,
+                    "question": "Which method can be used to directly authenticate users to PSM for SSH? (Choose three.)",
+                    "options": [
+                        {
+                            "a": "A.CyberArk authentication",
+                            "b": "B.LDAP authentication",
+                            "c": "C.RADIUS authentication",
+                            "d": "D.Windows authentication",
+                            "e": "E.SAML authentication",
+                            "f": "F.OpenID Connect (OIDC) authentication",
+                            "g": "ABF",
+                            "h": "CDE",
+                            "i": "BDF",
+
+                        }
+                    ],
+                    "answer": "ABF",
+                    "score": 0,
+                    "status": ""
+                },
+
+                {
+                    "id": 43,
+                    "question": "After installing the Vault, you need to allow Firewall Access for Windows Time service to sync with NTP servers 10.1.1.1 and 10.2.2.2.What should you do?",
+                    "options": [
+                        {
+                            "a": "Edit the Windows Firewall configuration to add a rule for Port 123/udp outbound to 10.1.1.1 and 10.2.2.2.",
+                            "b": "Edit DBParm.ini to add: NTPServer=[10.1.1.1:123/UDP,10.2.2.2:123/UDP].",
+                            "c": "Edit DBParm.ini to add: AllowNonStandardFWAddresses=[10.1.1.1,10.2.2.2],Yes,123:outbound/udp.",
+                            "d": "Edit DBParm.ini to add: AllowNonStandardFWAddresses=[10.1.1.1,10.2.2.2],Yes,123:outbound/udp,123:inbound/udp.",
+
+                        }
+                    ],
+                    "answer": "Edit the Windows Firewall configuration to add a rule for Port 123/udp outbound to 10.1.1.1 and 10.2.2.2.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 44,
+                    "question": "Which command should be executed to harden a Vault after registering it to Azure?",
+                    "options": [
+                        {
+                            "a": "ExecuteStage ./PostInstallation/PostInstallation.xml",
+                            "b": "HardenVaultFW.ps1",
+                            "c": "ExecuteStage ./Hardening/HardeningConf.xml",
+                            "d": "HardenAzureFW.ps1",
+
+                        }
+                    ],
+                    "answer": "HardenVaultFW.ps1",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 45,
+                    "question": "Which files does the Vault Installation Wizard prompt you for during the Vault install?",
+                    "options": [
+                        {
+                            "a": "Operator CD and License",
+                            "b": "Master CD and DBparm.ini",
+                            "c": "Operator CD and Vault Certificate",
+                            "d": "Master CD and License",
+
+                        }
+                    ],
+                    "answer": "Master CD and License",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 46,
+                    "question": "Which statement is correct about a post-install hardening?",
+                    "options": [
+                        {
+                            "a": "It is executed after Vault installation by running CAVaultHarden.exe and hardening options can be edited by changing the Hardening.ini file.",
+                            "b": "If it is mandated by an organization’s IT governance, you do not have to execute Vault hardening; however, server hardening cannot be reversed.",
+                            "c": "After the Vault server is installed, you must join the server to the Enterprise Domain and reboot the host.",
+                            "d": "The Vault must be hardened during the Vault installation process.",
+
+                        }
+                    ],
+                    "answer": "It is executed after Vault installation by running CAVaultHarden.exe and hardening options can be edited by changing the Hardening.ini file.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 47,
+                    "question": "As a member of a PAM Level-2 support team, you are troubleshooting an issue related to load balancing four PVWA servers at two data centers. You received a note from your Level-1 support team stating “When testing PVWA website from a workstation, we noticed that the “Source IP of last sign-in” was shown as the VIP (Virtual IP address) assigned to the four PVWA servers instead of the workstation IP where the PVWA site was launched from. Which step should you take? ",
+                    "options": [
+                        {
+                            "a": "Verify the (LoadBalancerClientAddressHeader) parameter setting in PVWA configuration file Web.config is set to (X-Forwarded-For).",
+                            "b": "Add the VIP (Virtual IP address) assigned to the four PVWA servers to the certificates issued for all four PVWA servers, if missing.",
+                            "c": "Edit the dbparm.ini file on the Vault server and add the IP or subnet of the workstation to the whitelist.",
+                            "d": "Add a firewall rule to allow the testing workstation to connect to the VIP (Virtual IP address) assigned to the four PVWA servers on Port TCP 443.",
+
+                        }
+                    ],
+                    "answer": "Verify the (LoadBalancerClientAddressHeader) parameter setting in PVWA configuration file Web.config is set to (X-Forwarded-For)",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 48,
+                    "question": "You are installing the HTML5 gateway on a Linux host using the RPM provided. After installing the Tomcat webapp, what is the next step in the installation process?",
+                    "options": [
+                        {
+                            "a": "Secure the connection between the guacd and the webapp.",
+                            "b": "Deploy the HTML5 service (guacd).",
+                            "c": "Secure the webapp and JWT validation endpoint.",
+                            "d": "Configure ASLR.",
+
+                        }
+                    ],
+                    "answer": "Secure the connection between the guacd and the webapp.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 49,
+                    "question": "What is required before the first CPM can be installed?",
+                    "options": [
+                        {
+                            "a": "The Vault environment must have at least one account stored in a safe.",
+                            "b": "Custom platforms must be downloaded from the CyberArk Marketplace.",
+                            "c": "The PSM component must be installed and proper functionality validated.",
+                            "d": "The environment must have at least one Vault and one PVWA installed.",
+
+                        }
+                    ],
+                    "answer": "The PSM component must be installed and proper functionality validated.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 50,
+                    "question": "When configuring RADIUS authentication, which utility is used to create a file containing an encrypted version of the RADIUS secret?",
+                    "options": [
+                        {
+                            "a": "CreateAuthFile",
+                            "b": "CACert",
+                            "c": "CAVaultManager",
+                            "d": "CreateCredFile",
+
+                        }
+                    ],
+                    "answer": "CreateAuthFile",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 51,
+                    "question": "What is the purpose of the CPM_Preinstallation.ps1 script included with the CPM installation package?",
+                    "options": [
+                        {
+                            "a": "It allows you to install the CPM using a command line approach rather than using the installation wizard.",
+                            "b": "It prompts for input parameters that will be used to pre-populate form fields in the installation wizard.",
+                            "c": "It automatically installs the CPM, requiring no additional user input.",
+                            "d": "It verifies the NET version installed on the server and sets the IIS SSL TLS server configuration.",
+
+                        }
+                    ],
+                    "answer": "It prompts for input parameters that will be used to pre-populate form fields in the installation wizard.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 52,
+                    "question": "Which tools are used during a CPM renaming process? (Choose two.)",
+                    "options": [
+                        {
+                            "a": "A.APIKeyManager Utility",
+                            "b": "B.CreateCredFile Utility",
+                            "c": "C.CPMInDomain_Hardening.ps1",
+                            "d": "D.PMTerminal.exe",
+                            "e": "E.Data Execution Prevention",
+                            "f": "AD",
+                            "f": "CD",
+                            "f": "BE",
+
+                        }
+                    ],
+                    "answer": "AD",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 53,
+                    "question": "When performing “In Domain” hardening of a PSM server, which steps must be performed? (Choose two.)",
+                    "options": [
+                        {
+                            "a": "A.Import CyberArk policy settings from the provided file into a new GPO.",
+                            "b": "B.Apply advanced audit on the PSM server.",
+                            "c": "C.Link GPO to a dedicated OU containing CyberArk PSM servers.",
+                            "d": "D.Import an INF file to the local machine.",
+                            "e": "E.Configure AppLocker rules to block running unknown executables.",
+                            "f": "BE",
+                            "g": "AD",
+                            "h": "CD",
+
+                        }
+                    ],
+                    "answer": "BE",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 54,
+                    "question": "Which step is required to register a Vault manually in Amazon Web Services using CAVaultManager?",
+                    "options": [
+                        {
+                            "a": "Specify Amazon as the cloud vendor using the /CloudVendor Flag",
+                            "b": "After running the postinstall utility, restart the PrivateArk Server service",
+                            "c": "Specify the Cloud region using the /CloudRegion flag",
+                            "d": "Specify whether the Vault is distributed or stand alone",
+
+                        }
+                    ],
+                    "answer": "Specify Amazon as the cloud vendor using the /CloudVendor Flag",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 55,
+                    "question": "What authentication methods can be implemented to enforce Two-Factor Authentication (2FA) for users authenticating to CyberArk using both the PVWA (through the browser) and the PrivateArk Client?",
+                    "options": [
+                        {
+                            "a": "LDAP and RADIUS",
+                            "b": "CyberArk and RADIUS",
+                            "c": "SAML and Cyber Ark",
+                            "d": "SAML and RADIUS",
+
+                        }
+                    ],
+                    "answer": "CyberArk and RADIUS",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 56,
+                    "question": "Which pre-requisite step must be completed before installing a Vault?",
+                    "options": [
+                        {
+                            "a": "Join the server to a domain.",
+                            "b": "Install a clean operating system.",
+                            "c": "Install antivirus software.",
+                            "d": "Copy the master CD to a folder on the Vault server.",
+
+                        }
+                    ],
+                    "answer": "Install a clean operating system.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 57,
+                    "question": "Which browser is supported for PSM Web Connectors developed using the CyberArk Plugin Generator Utility (PGU)?",
+                    "options": [
+                        {
+                            "a": "Google Chrome",
+                            "b": "Internet Explorer",
+                            "c": "Firefox",
+                            "d": "Opera",
+
+                        }
+                    ],
+                    "answer": "Google Chrome",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 58,
+                    "question": "You want to add an additional maintenance user on the PSM for SSH.How can you accomplish this if InstallCyberarkSSHD is set to Integrated?",
+                    "options": [
+                        {
+                            "a": "Create a local user called proxymng.",
+                            "b": "Create a local user and add it to the PSMMaintenance Group.",
+                            "c": "Create a local user and add it to group configured for the parameter AllowGroups in the /etc/sshd_config file.",
+                            "d": "Create a local user, called psmpmng.",
+
+                        }
+                    ],
+                    "answer": "Create a local user called proxymng.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 59,
+                    "question": "Which authentication methods does PSM for SSH support?",
+                    "options": [
+                        {
+                            "a": "CyberArk password LDAP, RADIUS, SAML",
+                            "b": "LDAP, Windows Authentication, SSH keys",
+                            "c": "RADIUS, Oracle SSO, CyberArk Password",
+                            "d": "CyberArk Password, LDAP, RADIUS",
+
+                        }
+                    ],
+                    "answer": "CyberArk Password, LDAP, RADIUS",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 60,
+                    "question": "Which statement is correct about CPM behavior in a distributed Vault environment?",
+                    "options": [
+                        {
+                            "a": "CPMs should only access the primary Vault. When it is unavailable, CPM cannot access any Vault until another Vault is promoted as the new primary Vault.",
+                            "b": "CPMs should only access the primary Vault. When it is unavailable, CPM cannot access any Vault until the original primary Vault is operational again.",
+                            "c": "CPM should access all Vaults - primary and the satellite.",
+                            "d": "CPMs should access only the satellite Vaults.",
+
+                        }
+                    ],
+                    "answer": "CPMs should only access the primary Vault. When it is unavailable, CPM cannot access any Vault until another Vault is promoted as the new primary Vault.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 61,
+                    "question": "What is the purpose of the PSM health check hardening?",
+                    "options": [
+                        {
+                            "a": "Remove IIS settings which can be considered security vulnerabilities.",
+                            "b": "Validate that the PSM is ready to be placed behind a load balancer.",
+                            "c": "Confirm that the Windows Services for PSM are running on the server.",
+                            "d": "Ensure that the AppLocker script does not have any syntax errors.",
+
+                        }
+                    ],
+                    "answer": "Ensure that the AppLocker script does not have any syntax errors.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 62,
+                    "question": "A customer's environment has three data centers consisting of 5,000 servers in Germany, 10,000 servers in Canada, and 1,500 servers in Singapore. You want to manage target servers and avoid complex firewall rules. How many CPMs should you deploy?",
+                    "options": [
+                        {
+                            "a": "6 total, 2 per data center",
+                            "b": "1",
+                            "c": "3 total, 1 per data center",
+                            "d": "15",
+
+                        }
+                    ],
+                    "answer": "6 total, 2 per data center",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 63,
+                    "question": "What is a step to enable NTP synchronization on a stand-alone Vault?",
+                    "options": [
+                        {
+                            "a": "Edit dbparm.ini and add a Firewall rule for the NTP address.",
+                            "b": "Restart the organization's NTP servers.",
+                            "c": "Run Powershell and add the NTP module.",
+                            "d": "Restart the Vault Event Notification Engine service.",
+
+                        }
+                    ],
+                    "answer": "Edit dbparm.ini and add a Firewall rule for the NTP address.",
+                    "score": 0,
+                    "status": ""
+                },
+
+                {
+                    "id": 64,
+                    "question": "What are the basic network requirements to deploy a CPM server?",
+                    "options": [
+                        {
+                            "a": "Port 1858 only",
+                            "b": "Port 1858 to Vault and Port 443 to PVWA",
+                            "c": "all ports to the Vault",
+                            "d": "Port UDP/1858 to Vault and all required ports to targets and Port 389 to the PSM",
+
+                        }
+                    ],
+                    "answer": "Port 1858 to Vault and Port 443 to PVWA",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 65,
+                    "question": "You want to change the name of the PVWAappuser of the second PVWA server. Which steps are part of the process? (Choose two.)",
+                    "options": [
+                        {
+                            "a": "A.Update PVWA.ini with new user name",
+                            "b": "B.Update Vault.ini with new user name",
+                            "c": "C.Create new user in PrivateArk",
+                            "d": "D.Rename user in PrivateArk",
+                            "e": "Create new cred file for user",
+                            "f": "DE",
+                            "g": "AB",
+                            "h": "CD",
+
+                        }
+                    ],
+                    "answer": "DE",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 66,
+                    "question": "Which statements are correct about the PSM HTML5 gateway? (Choose two.)",
+                    "options": [
+                        {
+                            "a": "A.Smart card redirection is supported",
+                            "b": "B.It does not support connections to target system where NLA is enabled on the PSM server",
+                            "c": "C.SSH sessions cannot be established",
+                            "d": "D.Printer redirection cannot be enabled",
+                            "e": "E.It does not support session recording capabilities for applications that run outside a web browser",
+                            "f": "BD",
+                            "g": "AB",
+                            "h": "EF",
+                            "i": "CD",
+
+                        }
+                    ],
+                    "answer": "BD",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 67,
+                    "question": "A customer has five PVWA servers. Three are located at the primary data center and the remaining two are at a satellite data center. What is important to consider about the load balancer? (Choose two.)",
+                    "options": [
+                        {
+                            "a": "A.It must not alter page content, or should include a mechanism to prevent pages from being altered.",
+                            "b": "B.It must support “sticky sessions”.",
+                            "c": "C.It must be able to digitally sign and issue certificates for PVWA servers.",
+                            "d": "D.It must be able to connect to all Vault and PVWA servers through Port TCP 443.",
+                            "e": "E.It must be configured with high-availability (HA) enabled.",
+                            "f": "BD",
+                            "g": "AB",
+                            "h": "DE",
+                            "i": "AD",
+
+                        }
+                    ],
+                    "answer": "BD",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 68,
+                    "question": "A new domain controller has been added to your domain. You need to ensure the CyberArk infrastructure can use the new domain controller for authentication. Which locations must you update?",
+                    "options": [
+                        {
+                            "a": "on the Vault server in C:\Windows\System32\drivers\etc\hosts and in the PVWAApplication under Administration &gt; LDAP Integration &gt; Directories &gt; Hosts",
+                            "b": "on both the Vault and the PVWA servers in C:\Windows\System32\drivers\etc\hosts",
+                            "c": "in the Private Ark client under Tools &gt; Administrative Tools &gt; Directory Mapping",
+                            "d": "on the Vault server in the certificate store and on the PVWA server in the certificate store",
+
+
+                        }
+                    ],
+                    "answer": "on the Vault server in C:\Windows\System32\drivers\etc\hosts and in the PVWAApplication under Administration &gt; LDAP Integration &gt; Directories &gt; Hosts",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 69,
+                    "question": "You are beginning the post-install process after a manual PSM installation is completed.What must you do?",
+                    "options": [
+                        {
+                            "a": "Disable screen saver for the PSM local users.",
+                            "b": "Create a new group called PSMShadowUsers.",
+                            "c": "Reset the PSMAdminConnect user password.",
+                            "d": "Enable load balancing on the PSM server.",
+
+
+                        }
+                    ],
+                    "answer": "Disable screen saver for the PSM local users.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 70,
+                    "question": "As Vault Admin, you have been asked to enable your organization's CyberArk users to authenticate using LDAP.In addition to Audit Users, which permission do you need to complete this task?",
+                    "options": [
+                        {
+                            "a": "Add Network Areas",
+                            "b": "Manage Directory Mapping",
+                            "c": "Add/Update Users",
+                            "d": "Activate Users",
+
+
+                        }
+                    ],
+                    "answer": "Manage Directory Mapping",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 71,
+                    "question": "Which user is enabled when replicating data between active and stand-by Vaults?",
+                    "options": [
+                        {
+                            "a": "Auditor",
+                            "b": "Operator",
+                            "c": "Backup",
+                            "d": "DR",
+
+
+                        }
+                    ],
+                    "answer": "DR",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 72,
+                    "question": "This value needs to be added to the PVWA configuration file: Assuming all CyberArk PVWA servers were installed using default paths/folders, which configuration file should you locate and edit to accomplish this?",
+                    "options": [
+                        {
+                            "a": "c:\inetpub\wwwroot\passwordvault\web.config",
+                            "b": "c:\inetpub\wwwroot\passwordvault\services\web.config",
+                            "c": "c:\cyberark\password vault web access\env\web.config",
+                            "d": "c:\program files\cyberark\password vault web access\web.config",
+
+
+                        }
+                    ],
+                    "answer": "c:\inetpub\wwwroot\passwordvault\web.config",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 73,
+                    "question": "A customer has five main data centers with one PVWA in each center under different URLs.How can you make this setup fault tolerant?",
+                    "options": [
+                        {
+                            "a": "Load balance all PVWAs under same URL.",
+                            "b": "Continuously monitor PVWA status and send users the link to another PVWA if issues are encountered.",
+                            "c": "Install more PVWAs in each data center.",
+                            "d": "This setup is already fault tolerant.",
+
+
+                        }
+                    ],
+                    "answer": "Load balance all PVWAs under same URL.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 74,
+                    "question": "What is the recommended method to determine if a PVWA is unavailable and should be disabled in a load balancing pool?",
+                    "options": [
+                        {
+                            "a": "Monitor Port 443 on the PVWA server",
+                            "b": "Ping the PVWA server",
+                            "c": "Monitor Port 1858 on the PVWA server",
+                            "d": "Monitor Port 3389 on the PVWA server",
+
+
+                        }
+                    ],
+                    "answer": "Monitor Port 443 on the PVWA server",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 75,
+                    "question": "For redundancy, you want to add a secondary RADIUS server. What must you do to accomplish this?",
+                    "options": [
+                        {
+                            "a": "Add to the application settings of the PVWA web.config file.",
+                            "b": "In the PVWA vault.ini file, list each RADIUS server host address in the 'Addresses' attribute separated by commas.",
+                            "c": "Open the DBParm.ini on the Vault server. Add the second RADIUS server configuration settings after the first one, separated by a comma.",
+                            "d": "In the PVWA web.config file, add the location element at the end of the config file. Set the path value to ,Default Web Site/PasswordVault/api/auth/pkipn/logon'.",
+
+
+                        }
+                    ],
+                    "answer": "Open the DBParm.ini on the Vault server. Add the second RADIUS server configuration settings after the first one, separated by a comma.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 76,
+                    "question": "Which parameter must be provided when registering a primary Vault in Azure, but not in Amazon Web Services?",
+                    "options": [
+                        {
+                            "a": "/RDPGateway",
+                            "b": "/MasterPass",
+                            "c": "/AdminPass",
+                            "d": "/RecPub",
+
+
+                        }
+                    ],
+                    "answer": "/RDPGateway",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 77,
+                    "question": "Which component must be installed before the first CPM installation?",
+                    "options": [
+                        {
+                            "a": "PTA",
+                            "b": "PSM",
+                            "c": "PVWA",
+                            "d": "EPM",
+
+
+                        }
+                    ],
+                    "answer": "PVWA",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 78,
+                    "question": "You are setting up a Linux host to act as an HTML 5 gateway for PSM sessions. Which servers need to be trusted by the Linux host to secure communications through the gateway?",
+                    "options": [
+                        {
+                            "a": "PSM and CPM",
+                            "b": "PSM and PVWA",
+                            "c": "PVWA and Vault",
+                            "d": "Vault and PSM",
+
+
+                        }
+                    ],
+                    "answer": "PSM and PVWA",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 79,
+                    "question": "What is a requirement for setting fault tolerance for PSMs?",
+                    "options": [
+                        {
+                            "a": "CPM must be in all data centers",
+                            "b": "Use a backup solution",
+                            "c": "Use a load balancer",
+                            "d": "Install the Vault in an HA cluster",
+
+
+                        }
+                    ],
+                    "answer": "CPM must be in all data centers",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 80,
+                    "question": "A customer asked you to help scope the company's PSM deployment. What should be included in the scoping conversation?",
+                    "options": [
+                        {
+                            "a": "Recordings file path",
+                            "b": "Recordings codec",
+                            "c": "Recordings retention period",
+                            "d": "Recordings file type",
+
+
+                        }
+                    ],
+                    "answer": "Recordings retention period",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 81,
+                    "question": "A customer has three data centers distributed globally and wants highly-available PSM connections in each segmented zone. In addition, the customer needs a highly-available PSM connection for the CyberArk Admins. What will best satisfy this customer's needs?",
+                    "options": [
+                        {
+                            "a": "three PSMs per zone with CyberArk built-in load balancing",
+                            "b": "two PSMs per zone with a load balancer and two PSMs for Admins with a dedicated load balancer",
+                            "c": "six PSMs in the mam data center with a load balancer and one PSM for Admins",
+                            "d": "one PSM per zone with a load balancer and two PSMs for Admins with a load balancer",
+
+
+                        }
+                    ],
+                    "answer": "two PSMs per zone with a load balancer and two PSMs for Admins with a dedicated load balancer",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 82,
+                    "question": "A customer has two data centers and requires a single PVWA url. Which deployment provides the fastest time to reach the PVWA and the most redundancy?",
+                    "options": [
+                        {
+                            "a": "Deploy two PVWAs behind a global traffic manager.",
+                            "b": "Deploy one PVWA only.",
+                            "c": "Deploy two PVWAs in an active/standby mode.",
+                            "d": "Deploy two PVWAs using DNS round robin.",
+
+
+                        }
+                    ],
+                    "answer": "Deploy two PVWAs using DNS round robin.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 83,
+                    "question": "What is determined by the 'MaxConcurrentConnections' setting within a platform?",
+                    "options": [
+                        {
+                            "a": "maximum number of concurrent connections that can be opened between the CPM and the remote machines for the platform",
+                            "b": "maximum number of concurrent connections that can be between the PSM and the remote machines for the platform",
+                            "c": "maximum number of concurrent connections allowed for a specific account on the platform through the PSM",
+                            "d": "maximum number of concurrent connections to the Vault allowed for sending audit activities relating to the platform",
+
+
+                        }
+                    ],
+                    "answer": "maximum number of concurrent connections that can be opened between the CPM and the remote machines for the platform",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 84,
+                    "question": "If a customer has one data center and requires fault tolerance, how many PVWAs should be deployed?",
+                    "options": [
+                        {
+                            "a": "two or more",
+                            "b": "one PVWA cluster",
+                            "c": "one",
+                            "d": "two PVWA clusters",
+
+
+                        }
+                    ],
+                    "answer": "two or more",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 85,
+                    "question": "You are installing multiple PVWAs behind a load balancer. Which statement is correct?",
+                    "options": [
+                        {
+                            "a": "Port 1858 must be opened between the load balancer and the PVWAs.",
+                            "b": "The load balancer must be configured in DNS round robin.",
+                            "c": "The load balancer must support 'sticky sessions'.",
+                            "d": "The LoadBalancerClientAddressHeader parameter in the PVWA.ini file must be set.",
+
+
+                        }
+                    ],
+                    "answer": "The load balancer must support 'sticky sessions'.",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 86,
+                    "question": "What is a prerequisite step before installing the Vault on Windows 2019?",
+                    "options": [
+                        {
+                            "a": "Configure the Kerberos authentication method on the default IIS Application pool",
+                            "b": "Check that the server IP address is correctly configured and that it is static",
+                            "c": "In the Network Connection properties, configure Preferred DNS Servers",
+                            "d": "Install Microsoft Windows patch KB4014998",
+
+
+                        }
+                    ],
+                    "answer": "Check that the server IP address is correctly configured and that it is static",
+                    "score": 0,
+                    "status": ""
+                },
+                {
+                    "id": 87,
+                    "question": "After installing the first PSM server and before installing additional PSM servers, you must ensure the user performing the installation is not a direct owner of which safe?",
+                    "options": [
+                        {
+                            "a": "PSMRecordingsSessionAccounts Safe",
+                            "b": "PSMUnmanagedSessionAccounts Safe",
+                            "c": "PSMUnmanagedApplicationAccounts Safe",
+                            "d": "PSMSessionBackupAccounts Safe",
+
+
+                        }
+                    ],
+                    "answer": "PSMUnmanagedSessionAccounts Safe",
+                    "score": 0,
+                    "status": ""
+                },
+                
+
+
+
+            ]
+        }
+
+
+
+        var quizApp = function () {
+
+            this.score = 0;
+            this.qno = 1;
+            this.currentque = 0;
+            var totalque = quiz.JS.length;
+
+            this.displayQuiz = function (cque) {
+                this.currentque = cque;
+                if (this.currentque < totalque) {
+                    $("#tque").html(totalque);
+                    $("#previous").attr("disabled", false);
+                    $("#next").attr("disabled", false);
+                    $("#qid").html(quiz.JS[this.currentque].id + '.');
+
+
+                    $("#question").html(quiz.JS[this.currentque].question);
+                    $("#question-options").html("");
+                    for (var key in quiz.JS[this.currentque].options[0]) {
+                        if (quiz.JS[this.currentque].options[0].hasOwnProperty(key)) {
+
+                            $("#question-options").append(
+                                "<div class='form-check option-block'>" +
+                                "<label class='form-check-label'>" +
+                                "<input type='radio' class='form-check-input' name='option'   id='q" + key + "' value='" + quiz.JS[this.currentque].options[0][key] + "'><span id='optionval'>" +
+                                quiz.JS[this.currentque].options[0][key] +
+                                "</span></label>"
+                            );
+                        }
+                    }
+                }
+                if (this.currentque <= 0) {
+                    $("#previous").attr("disabled", true);
+                }
+                if (this.currentque >= totalque) {
+                    $('#next').attr('disabled', true);
+                    for (var i = 0; i < totalque; i++) {
+                        this.score = this.score + quiz.JS[i].score;
+                    }
+                    return this.showResult(this.score);
+                }
+            }
+
+            this.showResult = function (scr) {
+                $("#result").addClass('result');
+                $("#result").html("<h4 class='res-header'>Total Score: &nbsp;" + scr + '/' + totalque + "</h4>");
+                for (var j = 0; j < totalque; j++) {
+                    var res;
+                    if (quiz.JS[j].score == 0) {
+                        res = '<span class="wrong">' + quiz.JS[j].score + '</span><i class="fa fa-remove c-wrong"></i>';
+                    } else {
+                        res = '<span class="correct">' + quiz.JS[j].score + '</span><i class="fa fa-check c-correct"></i>';
+                    }
+                    $("#result").append(
+                        '<div class="result-question"><span>Q ' + quiz.JS[j].id + '</span> &nbsp;' + quiz.JS[j].question + '</div>' +
+                        '<div><b>Correct answer:</b> &nbsp;' + quiz.JS[j].answer + '</div>' +
+                        '<div class="last-row"><b>Score:</b> &nbsp;' + res +
+
+                        '</div>'
+
+                    );
+
+                }
+            }
+
+            this.checkAnswer = function (option) {
+                var answer = quiz.JS[this.currentque].answer;
+                option = option.replace(/\</g, "&lt;")   //for <
+                option = option.replace(/\>/g, "&gt;")   //for >
+                option = option.replace(/"/g, "&quot;")
+
+                if (option == quiz.JS[this.currentque].answer) {
+                    if (quiz.JS[this.currentque].score == "") {
+                        quiz.JS[this.currentque].score = 1;
+                        quiz.JS[this.currentque].status = "correct";
+                    }
+                } else {
+                    quiz.JS[this.currentque].status = "wrong";
+                }
+
+            }
+
+            this.changeQuestion = function (cque) {
+                this.currentque = this.currentque + cque;
+                this.displayQuiz(this.currentque);
+
+            }
+
+        }
+
+
+        var jsq = new quizApp();
+
+        var selectedopt;
+        $(document).ready(function () {
+            jsq.displayQuiz(0);
+
+            $('#question-options').on('change', 'input[type=radio][name=option]', function (e) {
+
+                //var radio = $(this).find('input:radio');
+                $(this).prop("checked", true);
+                selectedopt = $(this).val();
+            });
+        });
+
+
+
+
+        $('#next').click(function (e) {
+            e.preventDefault();
+            if (selectedopt) {
+                jsq.checkAnswer(selectedopt);
+            }
+            jsq.changeQuestion(1);
+        });
+
+        $('#previous').click(function (e) {
+            e.preventDefault();
+            if (selectedopt) {
+                jsq.checkAnswer(selectedopt);
+            }
+            jsq.changeQuestion(-1);
+        });
+
+
+
+
+    </script>
+
+    <script>
+        var timeInSecs;
+        var ticker;
+
+        function startTimer(secs) {
+            timeInSecs = parseInt(secs);
+            ticker = setInterval("tick()", 1000);
+        }
+
+        function tick() {
+            var secs = timeInSecs;
+            if (secs > 0) {
+                timeInSecs--;
+            }
+            else {
+                clearInterval(ticker);
+                startTimer(45 * 60); // 4 minutes in seconds
+            }
+
+            var mins = Math.floor(secs / 60);
+            secs %= 60;
+            var pretty = ((mins < 10) ? "0" : "") + mins + ":" + ((secs < 10) ? "0" : "") + secs;
+
+            document.getElementById("countdown").innerHTML = pretty;
+        }
+
+        startTimer(45 * 60); // 4 minutes in seconds
+
+        //Credits to Gulzaib from Pakistan
+    </script>
+</body>
+
+</html>
