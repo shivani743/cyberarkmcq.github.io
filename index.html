@@ -607,135 +607,138 @@
                 },
                 {
                     "id": 26,
-                    "question": "Which component should be installed on the Vault if Distributed Vaults are used with PSM?",
+                    "question": "In which file must the attribute 'SignAuthnRequest=true' be added to the PartnerIdentityProvider element to support signed SAML requests?",
                     "options": [
                         {
-                            "a": "Distributed Vault Server",
-                            "b": "RabbitMQ",
-                            "c": "Disaster Recovery",
-                            "d": "Remote Control Client",
+                            "a": "samlconfig.ini",
+                            "b": "saml.config",
+                            "c": "PVConfiguration.xml",
+                            "d": "PVWAConfig.xml",
 
                         }
                     ],
-                    "answer": "Distributed Vault Server",
+                    "answer": "saml.config",
                     "score": 0,
                     "status": ""
                 },
                 {
                     "id": 27,
-                    "question": "What is the default username for the PSM for SSH maintenance user when InstallCyberarkSSHD is set to yes?",
+                    "question": "A customer has five PVWA servers. Three are located at the primary data center and the remaining two are at a satellite data center. What is important to consider about the load balancer? (Choose two.)",
                     "options": [
                         {
-                            "a": "proxymng",
-                            "b": "psmpmnguser",
-                            "c": "psmp_maintenance",
-                            "d": "psmpmnguser",
+                            "a": "It must support sticky sessions. Most Voted",
+                            "b": "It must be configured with high-availability (HA) enabled.",
+                            "c": "It must not alter page content, or should include a mechanism to prevent pages from being altered. Most Voted",
+                            "d": "It must be able to connect to all Vault and PVWA servers through Port TCP 443.",
+                            "e": "It must be able to digitally sign and issue certificates for PVWA servers.",
+                            "f": "ab",
+                            "g": "bc",
+                            "h": "ac",
 
                         }
                     ],
-                    "answer": "psmp_maintenance",
+                    "answer": "bc",
                     "score": 0,
                     "status": ""
                 },
                 {
                     "id": 28,
-                    "question": "Which parameter must be identical for both the Identity Provider (IdP) and the PVWA?",
+                    "question": "To enable LDAP over SSL for a Vault when DNS lookups are blocked, which step must be completed?",
                     "options": [
                         {
-                            "a": "IdP &quot; Secure hash algorithm &quot; and &quot; Certificate &quot; in the PVWA saml.config file",
-                            "b": "IdP &quot; Audience &quot; and &quot; ServiceProviderName &quot; in the PVWA saml.config file",
-                            "c": "IdP &quot; User name &quot; and &quot; SingleSignOnServiceUrl &quot; in PVWA saml.config file",
-                            "d": "IdP &quot; EntityID &quot; and &quot; PartnerIdentityProvider Name &quot; in PVWA saml.config file",
+                            "a": ". Ensure LDAP hosts added to the directory mapping configuration are defined using only IP addresses",
+                            "b": "Set the ReferralsDNSLookup parameter value to No in the directory configuration.",
+                            "c": "Configure an AllowNonStandardFWAddresses rule in DBParm.ini on the Vault to allow outbound TCP 53 to the organization's DNS servers.",
+                            "d": "Add the FQDN & IP details for each LDAP host into the local hosts file of the Vault server. Most Voted",
 
                         }
                     ],
-                    "answer": "IdP &quot; Secure hash algorithm &quot; and &quot; Certificate &quot; in the PVWA saml.config file",
+                    "answer": "Add the FQDN & IP details for each LDAP host into the local hosts file of the Vault server. Most Voted",
                     "score": 0,
                     "status": ""
                 },
                 {
                     "id": 29,
-                    "question": "All 80 employees from your satellite Tokyo office are complaining that browsing the PVWA site is very slow; however, your New York headquarters users are not experiencing this. The current PAM solution is:2 distributed Vaults, the primary one in New York and a satellite in Tokyo 2 PVWA servers, both in New York with load balancing configured 2 PSM servers, both in New York without load balancing configured 1 CPM server in New York All PVWA, PSM, and CPM servers are connected to the primary Vault Which proposal optimally resolves the performance issue while minimizing the impact to production? ",
+                    "question": "What is determined by the MaxConcurrentConnections setting within a platform?",
                     "options": [
                         {
-                            "a": "Install two new PVWA servers in Tokyo data center, configure load balancing, connect to the local satellite Vault and provide the URL of new PVWA servers to the local employees.",
-                            "b": "Install two new PSM servers in the Tokyo data center, configure load balancing, connect to the local satellite vault, and inform the local employees to browse using the same PVWA URL.",
-                            "c": "Change the current distributed Vaults architecture, migrate back to a Primary-DR architecture, install two new PVWA servers in the Tokyo data center and configure load balancing. Connect to the local DR Vault and provide the URL of new PVWA servers to the local employees.",
-                            "d": "Install two new PVWA servers in New York data center, configure load balancing and have them connect to the satellite Vault in Tokyo.",
+                            "a": "maximum number of concurrent connections that can be opened between the CPM and the remote machines for the platform",
+                            "b": "maximum number of concurrent connections allowed for a specific account on the platform through the PSM",
+                            "c": "maximum number of concurrent connections to the Vault allowed for sending audit activities relating to the platform",
+                            "d": " maximum number of concurrent connections that can be between the PSM and the remote machines for the platform",
 
                         }
                     ],
-                    "answer": "Install two new PVWA servers in Tokyo data center, configure load balancing, connect to the local satellite Vault and provide the URL of new PVWA servers to the local employees.",
+                    "answer": "maximum number of concurrent connections that can be opened between the CPM and the remote machines for the platform",
                     "score": 0,
                     "status": ""
                 },
                 {
                     "id": 30,
-                    "question": "You have been asked to limit a platform called &quot; Windows_Servers &quot; to safes called &quot; WindowsDC1 &quot; and &quot; WindowsDC2 &quot;. The platform must not be assigned to any other safe. What is the correct way to accomplish this?",
+                    "question": "What is a prerequisite step before CyberArk can be configured to support RADIUS authentication?",
                     "options": [
                         {
-                            "a": "Edit the &quot; Windows_Servers &quot; platform, expand &quot; Automatic Password Management &quot;, then select Options and modify &quot; AllowedSafes &quot; to be (Win*).",
-                            "b": "Edit the &quot; Windows_Servers &quot; platform, expand &quot; Automatic Password Management &quot;, then select General and modify &quot; AllowedSafes &quot; to be (WindowsDC1)|(WindowsDC2).",
-                            "c": "Edit the &quot; WindowsDC1 &quot; and &quot; WindowsDC2 &quot; safes through Safe Management, Add &quot; Windows_Servers &quot; to the &quot; AllowedPlatforms &quot;.",
-                            "d": "Log in to PrivateArk using an Administrative user, Select File, Server File Categories, Locate the category &quot; WindowsServersAllowedSafes &quot; and specify &quot; WindowsDC1,WindowsDC2 &quot;.",
+                            "a": "Log on to the PrivateArk Client, display the User properties of the user to configure, run the Authentication method drop-down list, and select RADIUS authentication.",
+                            "b": "In the RADIUS server, define the CyberArk Vault as a RADIUS client/agent. Most Voted",
+                            "c": "In the Vault installation folder, run CAVaultManager as administrator with the SecureSecretFiles command.",
+                            "d": "Navigate to /Server/Conf and open DBParm.ini and set the RadiusServersInfo parameter.",
 
                         }
                     ],
-                    "answer": "Edit the &quot; Windows_Servers &quot; platform, expand &quot; Automatic Password Management &quot;, then select General and modify &quot; AllowedSafes &quot; to be (WindowsDC1)|(WindowsDC2).",
+                    "answer": "In the RADIUS server, define the CyberArk Vault as a RADIUS client/agent. Most Voted",
                     "score": 0,
                     "status": ""
                 },
 
                 {
                     "id": 31,
-                    "question": "The account used to install a PVWA must have ownership of which safes? (Choose two.)",
+                    "question": "As Vault Admin, you have been asked to enable your organization's CyberArk users to authenticate using LDAP. In addition to Audit Users, which permission do you need to complete this task?",
                     "options": [
                         {
-                            "a": "A.VaultInternal",
-                            "b": "B.PVWAConfig",
-                            "c": "C.System",
-                            "d": "D.Notification Engine",
-                            "e": "E.PVWAReports",
-                            "f": "DE",
-                            "g": "AC",
-                            "h": "BD",
-                            "i": "CE",
-
+                            "a": "Manage Directory Mapping",
+                            "b": "Activate Users",
+                            "c": "Add Network Areas",
+                            "d": "Add/Update Users",
                         }
                     ],
-                    "answer": "AC",
+                    "answer": "Manage Directory Mapping",
                     "score": 0,
                     "status": ""
                 },
                 {
                     "id": 32,
-                    "question": "Which configuration file and Vault utility are used to migrate the server key to an HSM?",
+                    "question": "You have been asked to limit a platform called 'Windows_Servers' to safes called 'WindowsDC1' and 'WindowsDC2'. The platform must not be assigned to any other safe. What is the correct way to accomplish this?",
                     "options": [
                         {
-                            "a": "VaultKeys.ini and ChangeServerKeys.exe",
-                            "b": "DBparm.ini and CAVaultManager.exe",
-                            "c": "VaultKeys.ini and CAVaultManager.exe",
-                            "d": "DBparm.ini and ChangeServerKeys.exe",
+                            "a": "Edit the 'Windows_Servers' platform, expand 'Automatic Password Management', then select Options and modify 'AllowedSafes' to be (Win*).",
+                            "b": "Edit the 'WindowsDC1' and 'WindowsDC2' safes through Safe Management, Add 'Windows_Servers' to the 'AllowedPlatforms'.",
+                            "c": "Log in to PrivateArk using an Administrative user, Select File, Server File Categories, Locate the category 'WindowsServersAllowedSafes' and specify 'WindowsDC1,WindowsDC2'.",
+                            "d": "Edit the 'Windows_Servers' platform, expand 'Automatic Password Management', then select General and modify 'AllowedSafes' to be (WindowsDC1)|(WindowsDC2).",
 
                         }
                     ],
-                    "answer": "VaultKeys.ini and ChangeServerKeys.exe",
+                    "answer": "Edit the 'Windows_Servers' platform, expand 'Automatic Password Management', then select General and modify 'AllowedSafes' to be (WindowsDC1)|(WindowsDC2).",
                     "score": 0,
                     "status": ""
                 },
                 {
                     "id": 33,
-                    "question": "There is a requirement for a password to change between 01:00 and 03:00 on Saturdays and Sundays; however, this does not work consistently. Which platform setting may be the cause?",
+                    "question": "Which method can be used to directly authenticate users to PSM for SSH? (Choose three.)",
                     "options": [
                         {
-                            "a": "The DaysToRun setting for the platform is incorrect and must be set to Sat,Sun.",
-                            "b": "The HeadStartInterval setting for the platform is incorrect and must be set to 0.",
-                            "c": "The Interval setting for the platform is incorrect and must be less than 120.",
-                            "d": "The ImmediateInterval setting for the platform is incorrect and must be greater than or equal to 1.",
+                            "a": "SAML authentication",
+                            "b": "Windows authentication",
+                            "c": "CyberArk authentication Most Voted",
+                            "d": "LDAP authentication Most Voted",
+                            "e": "RADIUS authentication Most Voted",
+                            "f": "OpenID Connect (OIDC) authentication",
+                            "g": "cde",
+                            "h": "adc",
+                            "i": "def",
 
                         }
                     ],
-                    "answer": "The DaysToRun setting for the platform is incorrect and must be set to Sat,Sun.",
+                    "answer": "cde",
                     "score": 0,
                     "status": ""
                 },
